@@ -102,10 +102,15 @@ to use markdown to make the README professionally formatted.
 
 
 #### Level 1
-The system has a main menu and a `register` function that allows the user to save a username and password in a text file. The system also has a `login` function that allows a user to type in a username and password and then opens the file to see if it matches and returns `True` on a successful login.
+The system has a main menu and a `register` function that allows the user to
+save a username and password in a text file. The system also has a `login`
+function that allows a user to type in a username and password and then opens
+the file to see if it matches and returns `True` on a successful login.
 
 #### Level 2
-The system allows for logging out and for multiple users to register accounts. This means the system will save multiple lines (users) in the text file and search through it when one tries to log in.
+The system allows for logging out and for multiple users to register accounts.
+This means the system will save multiple lines (users) in the text file and
+search through it when one tries to log in.
 
 #### Level 3.1
 The system allows users to save extra profile data and view/edit their info.
@@ -114,6 +119,9 @@ The system allows users to save extra profile data and view/edit their info.
 The system stores passwords as md5 hashes or similar to enhance security.
 
 #### Level 4
-The system is more sophisticaded than Level 3. For example, instead of storing a plain text file, use a json file, or use a
-database such as sqlite or MongoDB. Another idea is to implement password reset functionality so that if a user forgets
-their password, their account can be recovered (see sendgrid in your GitHub student developer pack). You can also use a web server like Flask to create a web app implementing a user management system. 
+The system is more sophisticaded than Level 3. For example, instead of storing a
+plain text file, use a json file, or use a database such as sqlite or MongoDB.
+Another idea is to implement password reset functionality so that if a user
+forgets their password, their account can be recovered (see sendgrid in your
+GitHub student developer pack). You can also use a web server like Flask to
+create a web app implementing a user management system.

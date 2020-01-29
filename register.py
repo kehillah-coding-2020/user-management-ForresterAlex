@@ -11,7 +11,7 @@ def register():
     '''
     exit = False
     while not exit:
-        uname = input("Input a username (15 char max)")
+        uname = input("Input a username (15 char max): ")
         if len(uname) <= 15:
             exit = True
         else:

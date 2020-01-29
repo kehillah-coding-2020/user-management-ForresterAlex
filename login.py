@@ -4,7 +4,6 @@
 import getpass
 
 #File Imports
-UData = open("UserDatabase.txt", 'r')
 
 def login():
     '''
@@ -12,16 +11,19 @@ def login():
     '''
     exit = False
     while not exit:
+        uname = ''
+        passcode = ''
         uname = input("Enter your username: ")
         passcode = getpass.getpass("Enter your password: ")
+        UData = open("UserDatabase.txt", 'r')
         for line in UData:
             user_data = line.split('\t')
-            passcode = passcode + '\n'
+            user_data[1] = user_data[1].strip()
             if user_data[0] == uname:
                 if user_data[1] == passcode:
                     exit = True
-                else:
-                    print("Please enter a valid username and passcode")
-            else:
-                print("Please enter a valid username and passcode")
-    print("Authentication Success")
+        if exit == False:
+            print("Please enter a valid username and passcode")
+        UData.close()
+        User = uname
+    return "Authentication Success"

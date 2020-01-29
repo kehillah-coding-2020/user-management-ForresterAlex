@@ -26,7 +26,7 @@ def register():
         if not pass1 == pass2:
             print("Bad password match")
         else:
-            with open('passcode database.txt','a') as pass_database:
-                pass_database.write(uname + '\t'*3 + pass1 + '\n')
+            with open('UserDatabase.txt','a') as pass_database:
+                pass_database.write(uname + '\t' + pass1 + '\n')
             exit = True
     return "Success"

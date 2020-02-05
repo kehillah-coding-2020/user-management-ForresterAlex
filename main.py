@@ -4,6 +4,8 @@ import hashlib
 #Function Imports
 from register import register
 from login import login
+#User = None
+#from login import User
 
 #Main navigation prompt
 
@@ -26,3 +28,4 @@ while not exit:
         print(register())
     elif s == '2':
         print(login())
+        #print(User)

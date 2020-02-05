@@ -4,11 +4,14 @@
 import getpass
 
 #File Imports
+#from main import User
 
 def login():
     '''
     Prompt user for login info
     '''
+
+    #global User
     exit = False
     while not exit:
         uname = ''
@@ -25,5 +28,8 @@ def login():
         if exit == False:
             print("Please enter a valid username and passcode")
         UData.close()
-        User = uname
-    return "Authentication Success"
+
+    User = uname
+    return "Authentication Success. Welcome " + uname
+
+global User

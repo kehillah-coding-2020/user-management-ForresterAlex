@@ -8,21 +8,20 @@ from login import login
 #Main navigation prompt
 
 
-
+User = None
 exit = False
 
 while not exit:
-
+    print("Current User: " + str(User))
     print('1. Register')
     print('2. Login')
     print('3. Different Stuff')
     print('4. Exit')
 
     s = input('Make a selection: ')
-
     if s == '4':
         exit = True
     elif s == '1':
-        print(register())
+        User = register()
     elif s == '2':
         User = login()

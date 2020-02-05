@@ -30,6 +30,6 @@ def login():
         UData.close()
 
     User = uname
-    return "Authentication Success. Welcome " + uname
+    return uname
 
 global User

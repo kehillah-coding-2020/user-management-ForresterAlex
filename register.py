@@ -29,4 +29,4 @@ def register():
             with open('UserDatabase.txt','a') as pass_database:
                 pass_database.write(uname + '\t' + pass1 + '\n')
             exit = True
-    return "Success"
+    return uname

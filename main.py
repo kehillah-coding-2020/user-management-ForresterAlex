@@ -5,6 +5,7 @@ import hashlib
 from register import register
 from login import login
 from logout import logout
+from delete import delete
 #Main navigation prompt
 
 
@@ -16,6 +17,7 @@ while not exit:
     print('1. Register')
     print('2. Login')
     print('3. Logout')
+    print('4. Delete Account')
     print('6. Exit')
 
     s = input('Make a selection: ')
@@ -27,3 +29,5 @@ while not exit:
         User = login()
     elif s == '3':
         User = logout()
+    elif s == '4':
+        delete(User)

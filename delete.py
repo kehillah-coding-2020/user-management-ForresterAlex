@@ -21,6 +21,13 @@ def delete(User):
                     if user_data[0] == uname:
                         if user_data[1] == passcode:
                             exit = True
+                            auth = True
                 if exit == False:
                     print("Please enter a valid username and passcode")
                 UData.close()
+        if auth == True:
+            Udata = open("UserDatabase.txt", 'r')
+            Data = []
+            for line in Udata:
+                Data.append(line)
+            print(Data)
